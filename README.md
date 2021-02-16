@@ -1,21 +1,20 @@
-<h1>Brygada-1918</h1>
+<h1>Bona Nova</h1>
 
 <h5>Description</h5>
-Brygada 1918 is a digital revival project created for the celebration of 100 years of independance of the Republic of Poland in 2018. The typeface is based on the catalogue entry of the National Type Foundry from 1954 and a set of matrices found at the Book Arts Museum by mr. Janusz Tryzno in 2016. The original styles included Regular, Italics, and Bold in a range of sizes.
+Bona Nova is a digitisation project of Bona typeface designed in 1971 by Andrzej Heidrich, the creator of Polish banknotes. Our concept, besides giving it a digital form, was to expand the character set, design the small caps, alternates and opentype functions for the typeface. Together with the original author we created two new versions – Regular and Bold to give the family a form of a classical triad. The complete family is distributed under open font license. In 2019-2020 Bona Nova was extended with new scripts: Cyrillic’s, IPA, Greek, Vietnamese, Arabic & Hebrew.
 
-<h5>Expansion</h5>
-The initial revival project, which went on from Jan to May 2018, refined the design for contemporary needs and expanded the style range with SemiBold, SemiBold Italics, and Bold Italics, to a total of 6 instances. We also broadened the character set to cover the majority of Latin Script Languages. The second expansion was done in October 2018 and included Cyrillic, International Phonetic Alphabet, and Greek scripts. The typeface has sub and superscript numbers and alphabetic characters, Old Style and Proportial figures (both also available in Tabular version), Case Sensitive characters, and a range of functional and decorative extra characters.
+<h5>Digital Font</h5>
+In the beginning Bona Nova typeface project aimed simply to digitise the cursive style, designed originally by Andrzej Heidrich. A voice came up that in that form it will be difficult to find application for the design in common design, forcing just the display usage. This is why I gathered tons of Andrzej Heidrich lettering examples. I tried to find characteristic solutions, that would be a starting point to draw an upright version of Bona. Heidrich has his own unforgeable style, with classical proportions, limited details and subtle contrast. After preparing a complete set of upright characters I began working on the Bold version. Bona is inspired by the Italian renaissance Antiqua, which is why the newly created Bold version is just slightly thicker than the regular.
 
-Second stage of the project included a publication on the research and process, as well as a website that contains documentation and information about Brygada.
-More info available on the [project website](https://brygada1918.eu/?lang=en).
+The family has multiple OpenType features such as ligatures, different figure styles (proportional, oldstyle, and tabular), small caps, contextual alternates, collection of swash characters, subscript & superscript, a set of ornamental manicules (hands), other ornaments, and case sensitive characters. More information can be found on the  [project website](https://bonanova.wtf/?lang=en).
 
-Thanks to support of Google Brygada 1918 was further expanded in 2020 with Vietnamese diacritics and adapted for Variable technology. [Brygada 1918 on Google Fonts](https://fonts.google.com/specimen/Brygada+1918).
+Thanks to support of Google Bona Nova was expanded in 2020 with Hebrew script and adapted for Variable technology. [Bona Nova on Google Fonts](https://fonts.google.com/specimen/Bona+Nova).
 
 <h5>Designers involved</h5>
-Brygada 1918 was a collaborative project of Mateusz Machalski, Borys Kosmynka, Ania Wieluńska, and Przemysław Hoffer.
+Bona Nova was a initiated by Mateusz Machalski, and completed with support of Andrzej Heidrich (original author), Leszek Bielski (consultant), Ania Wieluńska (design support), and Michał Jarociński (design consultant).
 
 Copyright
-Copyright 2018 Mateusz Machalski (info@machalski.wtf), Borys Kosmynka (info@kosmynka.com), Przemysław Hoffer, Ania Wieluńska.
+Copyright 2018 Mateusz Machalski (info@machalski.wtf).
 
 <h5>License</h5>
 This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
