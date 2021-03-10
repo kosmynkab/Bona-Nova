@@ -8,5 +8,7 @@
 #
 # Names should be added to this file as:
 # Name <email address>
+
 Andrzej Heidrich (author of the original)
 Leszek Bielski
+Rosalie Wagner <mail@rosaliewagner.com>
