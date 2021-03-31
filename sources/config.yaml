@@ -1,0 +1,5 @@
+    sources:
+      - BonaNova.glyphs
+      - BonaNova-Italic.glyphs
+    familyName: Bona Nova
+    buildVariable: False
