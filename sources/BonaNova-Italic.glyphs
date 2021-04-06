@@ -109,17 +109,17 @@ feature pnum;
 feature tnum;
 feature onum;
 feature case;
+feature init;
 feature medi;
 feature fina;
 feature swsh;
-feature init;
 feature ss01;
 feature ss02;
 feature ss03;
 feature calt;
-feature ss04;
 feature c2sc;
 feature smcp;
+feature ss04;
 ";
 name = aalt;
 },
@@ -130,8 +130,8 @@ code = "lookup ccmp_Other_1 {
 	@CombiningNonTopAccents = [brevebelowcomb caronbelowcomb cedillacomb dieresisbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb tildebelowcomb horncomb strokelongcomb strokeshortcomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
-	@Markscomb = [brevecomb-cy tonos dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_hookabovecomb caroncomb brevecomb ringcomb tildecomb macroncomb hookabovecomb dblgravecomb breveinvertedcomb cedillacomb ogonekcomb];
-	@MarkscombCase = [brevecomb-cy.case tonos.case dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_hookabovecomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case cedillacomb.case ogonekcomb.case];
+	@Markscomb = [brevecomb-cy tonos dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_hookabovecomb caroncomb brevecomb ringcomb tildecomb macroncomb hookabovecomb dblgravecomb breveinvertedcomb dotbelowcomb cedillacomb ogonekcomb];
+	@MarkscombCase = [brevecomb-cy.case tonos.case dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_hookabovecomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case dotbelowcomb.case cedillacomb.case ogonekcomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
 } ccmp_Other_1;
@@ -782,6 +782,7 @@ sub macroncomb by macroncomb.case;
 sub hookabovecomb by hookabovecomb.case;
 sub dblgravecomb by dblgravecomb.case;
 sub breveinvertedcomb by breveinvertedcomb.case;
+sub dotbelowcomb by dotbelowcomb.case;
 sub cedillacomb by cedillacomb.case;
 sub ogonekcomb by ogonekcomb.case;
 sub zero by zero.lf;
@@ -109656,6 +109657,7 @@ kerning = {
 "@MMK_R_n" = -10;
 "@MMK_R_sign_bottom" = -30;
 "@MMK_R_x" = -10;
+"@MMK_R_v" = -20;
 };
 "@MMK_L_E" = {
 "@MMK_R_V" = -20;
@@ -109694,7 +109696,6 @@ kerning = {
 "@MMK_R_sign_middle" = -20;
 "@MMK_R_sign_top" = -50;
 "@MMK_R_t.sc" = -50;
-"@MMK_R_u.sc" = -30;
 "@MMK_R_v.sc" = -40;
 "@MMK_R_w.sc" = -40;
 "@MMK_R_x.sc" = -20;
@@ -109707,7 +109708,6 @@ kerning = {
 "@MMK_R_W" = -60;
 "@MMK_R_sign_middle" = -20;
 "@MMK_R_sign_top" = -70;
-"@MMK_R_u.sc" = -20;
 "@MMK_R_v" = -40;
 "@MMK_R_v.sc" = -70;
 "@MMK_R_w.sc" = -60;
@@ -109830,7 +109830,6 @@ kerning = {
 "@MMK_R_o.sc" = -40;
 "@MMK_R_sign_middle" = 0;
 "@MMK_R_t.sc" = -40;
-"@MMK_R_u.sc" = -20;
 "@MMK_R_v.sc" = -50;
 "@MMK_R_w.sc" = -40;
 "@MMK_R_x" = -20;
@@ -109843,10 +109842,6 @@ kerning = {
 "@MMK_R_v" = -20;
 "@MMK_R_v.sc" = -20;
 "@MMK_R_w.sc" = -20;
-};
-"@MMK_L_Z\" = {
-"@MMK_R_o.sc" = -10;
-"@MMK_R_v" = -20;
 };
 "@MMK_L_a.sc" = {
 "@MMK_R_A" = 10;
@@ -109861,15 +109856,11 @@ kerning = {
 "@MMK_R_o.sc" = -20;
 "@MMK_R_sign_top" = -60;
 "@MMK_R_t.sc" = -60;
-"@MMK_R_u.sc" = -20;
 "@MMK_R_v" = -30;
 "@MMK_R_v.sc" = -60;
 "@MMK_R_w.sc" = -60;
 "@MMK_R_x" = -10;
-P = 0;
-};
-"@MMK_L_c.sc" = {
-"@MMK_R_h.sc" = -10;
+"@MMK_R_H" = 0;
 };
 "@MMK_L_excalm.sc" = {
 "@MMK_R_nawias" = 40;
@@ -109925,9 +109916,6 @@ P = 0;
 "@MMK_R_l" = 70;
 "@MMK_R_sign_top" = 70;
 };
-"@MMK_L_hacek.t" = {
-"@MMK_R_l" = 50;
-};
 "@MMK_L_i" = {
 "@MMK_R_T" = -40;
 "@MMK_R_W" = -30;
@@ -109964,7 +109952,6 @@ P = 0;
 "@MMK_R_sign_middle" = -30;
 "@MMK_R_sign_top" = -80;
 "@MMK_R_t.sc" = -80;
-"@MMK_R_u.sc" = -20;
 "@MMK_R_v" = -40;
 "@MMK_R_v.sc" = -40;
 "@MMK_R_w.sc" = -50;
@@ -110017,10 +110004,10 @@ P = 0;
 "@MMK_R_X" = -30;
 "@MMK_R_a.sc" = -20;
 "@MMK_R_t.sc" = -20;
-"@MMK_R_u.sc" = -10;
 "@MMK_R_v.sc" = -20;
 "@MMK_R_w.sc" = -10;
 "@MMK_R_x.sc" = -20;
+"@MMK_R_v" = -10;
 };
 "@MMK_L_one.sups" = {
 "@MMK_R_fraction" = 40;
@@ -110106,7 +110093,7 @@ questiondown.sc = 20;
 "@MMK_R_V" = 30;
 "@MMK_R_W" = 20;
 "@MMK_R_sign_bottom" = -30;
-braceright.sups = 10;
+"@MMK_R_nawias" = 10;
 };
 "@MMK_L_t.sc" = {
 "@MMK_R_A" = -50;
@@ -110206,17 +110193,8 @@ braceright.sups = 10;
 "@MMK_R_w.sc" = -30;
 "@MMK_R_x" = -10;
 };
-C = {
-"@MMK_R_v" = -20;
-};
-N = {
-"@MMK_R_O" = -10;
-};
 braceleft = {
 "@MMK_R_nawias" = 0;
-};
-c.sc = {
-"@MMK_R_v" = -10;
 };
 omicron = {
 "@MMK_R_a.sc" = -30;

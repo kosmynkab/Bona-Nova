@@ -285,6 +285,22 @@ googlefonts/ufo2ft/issues/329
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 🔥 **FAIL** Failed to lookup ligatures. This font file seems to be malformed. For more info, read: https://github.com/googlefonts/fontbakery/issues/1596 [code: malformed]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/vendor_id](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id)
@@ -413,14 +429,6 @@ Glyph name: uni1EDF	Contours detected: 4	Expected: 3
 Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni20B1	Contours detected: 3	Expected: 1, 2 or 4 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</summary>
-
-* [com.google.fonts/check/gpos_kerning_info](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info)
-
-* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
 
 </details>
 <details>
@@ -737,8 +745,8 @@ lines.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 15 | 270 | 22 | 243 | 0 |
-| 0% | 1% | 3% | 49% | 4% | 44% | 0% |
+| 0 | 6 | 14 | 269 | 22 | 244 | 0 |
+| 0% | 1% | 3% | 48% | 4% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
