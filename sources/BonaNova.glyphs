@@ -116,8 +116,8 @@ code = "lookup ccmp_Other_1 {
 	@CombiningNonTopAccents = [brevebelowcomb caronbelowcomb cedillacomb dieresisbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb tildebelowcomb horncomb strokelongcomb strokeshortcomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
-	@Markscomb = [brevecomb-cy tonos dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_hookabovecomb caroncomb brevecomb ringcomb tildecomb macroncomb hookabovecomb dblgravecomb breveinvertedcomb cedillacomb ogonekcomb];
-	@MarkscombCase = [brevecomb-cy.case tonos.case dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_hookabovecomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case cedillacomb.case ogonekcomb.case];
+	@Markscomb = [brevecomb-cy tonos dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_hookabovecomb caroncomb brevecomb ringcomb tildecomb macroncomb hookabovecomb dblgravecomb breveinvertedcomb dotbelowcomb cedillacomb ogonekcomb];
+	@MarkscombCase = [brevecomb-cy.case tonos.case dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_hookabovecomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case dotbelowcomb.case cedillacomb.case ogonekcomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
 } ccmp_Other_1;
@@ -1400,6 +1400,7 @@ sub macroncomb by macroncomb.case;
 sub hookabovecomb by hookabovecomb.case;
 sub dblgravecomb by dblgravecomb.case;
 sub breveinvertedcomb by breveinvertedcomb.case;
+sub dotbelowcomb by dotbelowcomb.case;
 sub cedillacomb by cedillacomb.case;
 sub ogonekcomb by ogonekcomb.case;
 sub zero by zero.lf;
