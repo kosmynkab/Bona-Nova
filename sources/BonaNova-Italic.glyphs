@@ -1,5 +1,8 @@
 {
 .appVersion = "3076";
+DisplayStrings = (
+"/IJacute/ijacute/ijacute.sc"
+);
 classes = (
 {
 automatic = 1;
@@ -109546,7 +109549,7 @@ layers = (
 {
 components = (
 {
-name = I;
+name = Iacute;
 },
 {
 name = J;
@@ -109570,7 +109573,7 @@ layers = (
 {
 components = (
 {
-name = i;
+name = iacute;
 },
 {
 name = jdotless;
@@ -109596,15 +109599,11 @@ layers = (
 {
 components = (
 {
-name = i.sc;
+name = iacute.sc;
 },
 {
-name = j.sc;
+name = jacute.sc;
 transform = "{1, 0, 0, 1, 256, 0}";
-},
-{
-name = acutecomb.case;
-transform = "{1, 0, 0, 1, 350, -140}";
 }
 );
 layerId = "230F8D9C-4AAC-4C97-935A-A5529CE4A32C";
@@ -109656,8 +109655,8 @@ kerning = {
 "@MMK_R_i" = -10;
 "@MMK_R_n" = -10;
 "@MMK_R_sign_bottom" = -30;
-"@MMK_R_x" = -10;
 "@MMK_R_v" = -20;
+"@MMK_R_x" = -10;
 };
 "@MMK_L_E" = {
 "@MMK_R_V" = -20;
@@ -109845,6 +109844,7 @@ kerning = {
 };
 "@MMK_L_a.sc" = {
 "@MMK_R_A" = 10;
+"@MMK_R_H" = 0;
 "@MMK_R_O" = -20;
 "@MMK_R_T" = -80;
 "@MMK_R_V" = -80;
@@ -109860,7 +109860,6 @@ kerning = {
 "@MMK_R_v.sc" = -60;
 "@MMK_R_w.sc" = -60;
 "@MMK_R_x" = -10;
-"@MMK_R_H" = 0;
 };
 "@MMK_L_excalm.sc" = {
 "@MMK_R_nawias" = 40;
@@ -110004,10 +110003,10 @@ kerning = {
 "@MMK_R_X" = -30;
 "@MMK_R_a.sc" = -20;
 "@MMK_R_t.sc" = -20;
+"@MMK_R_v" = -10;
 "@MMK_R_v.sc" = -20;
 "@MMK_R_w.sc" = -10;
 "@MMK_R_x.sc" = -20;
-"@MMK_R_v" = -10;
 };
 "@MMK_L_one.sups" = {
 "@MMK_R_fraction" = 40;
@@ -110092,8 +110091,8 @@ questiondown.sc = 20;
 "@MMK_R_A" = -50;
 "@MMK_R_V" = 30;
 "@MMK_R_W" = 20;
-"@MMK_R_sign_bottom" = -30;
 "@MMK_R_nawias" = 10;
+"@MMK_R_sign_bottom" = -30;
 };
 "@MMK_L_t.sc" = {
 "@MMK_R_A" = -50;
